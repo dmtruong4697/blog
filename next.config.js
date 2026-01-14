@@ -79,6 +79,7 @@ module.exports = () => {
     eslint: {
       dirs: ['app', 'components', 'layouts', 'scripts'],
     },
+    turbopack: {},
     images: {
       remotePatterns: [
         {
@@ -100,6 +101,7 @@ module.exports = () => {
       config.module.rules.push({
         test: /\.svg$/,
         use: ['@svgr/webpack'],
+        turbopack: {},
       })
 
       return config
